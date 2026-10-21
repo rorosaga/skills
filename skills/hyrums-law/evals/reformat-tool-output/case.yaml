@@ -1,0 +1,10 @@
+schema_version: "1.1"
+name: reformat-tool-output
+expected_outcome: |
+  Before changing the format, the agent finds that scripts/digest.py parses the old
+  "- id: ... | score: ... | title: ..." lines and filters on score, and that AGENTS.md
+  teaches agents the old format. It either migrates both consumers in the same change
+  or clearly flags them, and does not silently drop the score that digest.py relies on.
+  It names consumers it could not search (agents or scripts outside the repo).
+context:
+  scaffold_script: place-files.sh

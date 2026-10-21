@@ -1,0 +1,10 @@
+schema_version: "1.1"
+name: settings-audit-memory-app
+expected_outcome: |
+  A verdict for every setting in settings.json. Technical knobs (similarity threshold,
+  decay rate, recall top-k, log level, consolidation cron, max episode length) are cut,
+  inferred or moved to advanced, each with a stated default. Data and trust controls
+  (pause capture, export, delete all, telemetry consent) stay visible. The answer covers
+  what happens to the 40 beta users who changed a value.
+context:
+  scaffold_script: place-files.sh

@@ -1,0 +1,20 @@
+{
+  "screen": "Settings",
+  "settings": [
+    {"key": "theme", "label": "Theme", "type": "enum", "options": ["system", "light", "dark"], "default": "system"},
+    {"key": "language", "label": "Language", "type": "enum", "options": ["auto", "en", "es"], "default": "auto"},
+    {"key": "capture_paused", "label": "Pause capture", "type": "bool", "default": false},
+    {"key": "embedding_model", "label": "Embedding model", "type": "enum", "options": ["e5-small", "embeddinggemma-2", "bge-small"], "default": "e5-small"},
+    {"key": "consolidation_engine", "label": "Consolidation engine", "type": "enum", "options": ["auto", "local", "cloud"], "default": "auto"},
+    {"key": "consolidation_cron", "label": "Sleep schedule (cron)", "type": "string", "default": "0 3 * * *"},
+    {"key": "similarity_threshold", "label": "Entity merge similarity threshold", "type": "float", "default": 0.82},
+    {"key": "decay_rate", "label": "Memory decay rate per day", "type": "float", "default": 0.015},
+    {"key": "recall_top_k", "label": "Recall results (top-k)", "type": "int", "default": 8},
+    {"key": "max_episode_chars", "label": "Max episode length (chars)", "type": "int", "default": 20000},
+    {"key": "log_level", "label": "Log level", "type": "enum", "options": ["error", "warn", "info", "debug"], "default": "warn"},
+    {"key": "update_channel", "label": "Update channel", "type": "enum", "options": ["stable", "beta"], "default": "stable"},
+    {"key": "telemetry_opt_in", "label": "Share anonymous usage data", "type": "bool", "default": false},
+    {"key": "export_memories", "label": "Export all memories", "type": "action"},
+    {"key": "delete_all_memories", "label": "Delete all memories", "type": "action"}
+  ]
+}
