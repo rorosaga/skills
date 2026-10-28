@@ -1,0 +1,1 @@
+Clips, stills and sketches whose taste the film should borrow. Name each file for what it is a reference for (`pacing-linear-launch.mp4`, `type-reveal.png`, `storyboard-sketch.jpg`). Notes about what to take from each go in `notes.md`.

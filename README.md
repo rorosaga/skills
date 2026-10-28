@@ -5,6 +5,7 @@ Agent skills I maintain for Claude Code, Codex, Cursor and other harnesses that 
 | Skill | What it does |
 |---|---|
 | [`hyrums-law`](skills/hyrums-law/SKILL.md) | Before changing or exposing anything other code, agents or users can observe, inventory what is observable, find who depends on it, and migrate them. Also audits settings screens: cut, infer or hide knobs, and keep data controls visible. |
+| [`code-film`](skills/code-film/SKILL.md) | Make motion-graphics videos in code: TypeScript scenes on a GSAP timeline, previewed live, rendered frame by frame to MP4 with Playwright and ffmpeg, sound cues mixed in sync. Review notes become rules in a `TASTE.md` the project keeps. Comes with a starter film that renders. |
 
 ## Install
 
